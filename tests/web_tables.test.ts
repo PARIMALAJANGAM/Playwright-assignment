@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test.only("web tables", async ({page})  => {
+test("web tables", async ({page})  => {
 await page.goto("https://demoqa.com/webtables");
 await page.locator("#addNewRecordButton").click();
 await page.locator("#firstName").fill("parimala");
